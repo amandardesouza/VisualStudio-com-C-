@@ -17,7 +17,8 @@ namespace TakeTestExemplo
             IWebDriver driver = new ChromeDriver();
             driver.Navigate().GoToUrl("https://www.google.com");
             driver.Manage().Window.Maximize();
-            //driver.Quit();
+            System.Threading.Thread.Sleep(3000);
+            driver.Quit();
 
 
         }
