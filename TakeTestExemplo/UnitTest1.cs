@@ -17,8 +17,10 @@ namespace TakeTestExemplo
             IWebDriver driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
             driver.Navigate().GoToUrl("http://framedlife.com.br/fotoescambo/users/login");
-            IWebElement element = driver.FindElement(By.Id("UserEmail"));
-            element.SendKeys("guifreitag@gmail.com");
+            IWebElement username = driver.FindElement(By.Id("UserEmail"));
+            username.SendKeys("guifreitag@gmail.com");
+            IWebElement password = driver.FindElement(By.Id("UserPassword"));
+            password.SendKeys("passw0rd");
             System.Threading.Thread.Sleep(3000);
             driver.Quit();
 
