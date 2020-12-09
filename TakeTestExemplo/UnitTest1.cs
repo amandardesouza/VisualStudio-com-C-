@@ -19,8 +19,6 @@ namespace TakeTestExemplo
             driver.Navigate().GoToUrl("http://framedlife.com.br/fotoescambo/users/login");
             IWebElement element = driver.FindElement(By.Id("UserEmail"));
             element.SendKeys("guifreitag@gmail.com");
-            //IWebElement element = driver.FindElement(By.Id("UserPassword"));
-            //element.SendKeys("passw0rd");
             System.Threading.Thread.Sleep(3000);
             driver.Quit();
 
